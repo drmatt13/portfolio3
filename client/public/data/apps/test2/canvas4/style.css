@@ -1,0 +1,18 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.canvasDisplay {
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+#canvas {
+  margin: 100px;
+  /* overflow: hidden; */
+  border: 1px solid black;
+  /* background-color: #000; */
+}

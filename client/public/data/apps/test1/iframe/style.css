@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #4b4b4b;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+::-webkit-scrollbar-corner {
+  background: #4b4b4b;
+}
+
+body {
+  background-color: #305c50;
+  background-image: linear-gradient(28deg, #305c50 0%, #6ab19e 70%, #82d8a6 100%);
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0px;
+}
+
+.test {
+  height: 50vh;
+  width: 100%;
+  background-color: #0007;
+  user-select: none;
+}
+
+.test:hover {
+  background-color: #000a;
+  cursor: pointer;
+}
+
+.frame1 {
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+
+.fb-post2 {
+  width: 100%;
+}

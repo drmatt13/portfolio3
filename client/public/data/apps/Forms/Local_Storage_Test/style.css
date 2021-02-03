@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.24), 0 2px 3px rgba(0, 0, 0, 0.48);
+}
+
+.master {
+  background: #caa;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.master-child {
+  background: #fff;
+  height: 300px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: var(--box-shadow);
+}
+
+.first {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.first label, .first input, .first button {
+  width: 100%;
+}
+
+.second {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.second button {
+  width: 100%;
+}

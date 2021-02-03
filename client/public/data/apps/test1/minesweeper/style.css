@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap');
+
+:root {
+    --box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.06), 0 2px 3px rgba(0, 0, 0, 0.12);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: rgb(196, 196, 196); */
+    background-color: #305c50;
+    background-image: linear-gradient(28deg, #305c50 0%, #6ab19e 70%, #82d8a6 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+
+/* .game-container {
+
+} */
+
+.top-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.top-container div {
+    box-shadow: var(--box-shadow);
+}
+
+.div1 {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: red;
+    font-size: large;
+    padding: 4px;
+    text-align: center;
+}
+
+.div2 {
+    background-color: rgba(128, 128, 128, 0.5);
+    padding: 3px;
+}
+
+.div2:hover {
+    cursor: pointer;
+}
+
+.div3 {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: red;
+    font-size: large;
+    padding: 4px;
+}
+
+.grid {
+    height: 70vh;
+    width: 70vh;
+    min-height: 250px;
+    min-width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: grey;
+    box-shadow: var(--box-shadow);
+}
+
+.grid div {
+    height: calc(100% / 20);
+    width: calc(100% / 20);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+}
+
+.grid div:hover {
+    background-color: rgb(125, 145, 125);
+    cursor: pointer;
+}
+
+.color1 {
+    color: rgb(40, 8, 219);
+}
+
+.color2 {
+    color: rgb(8, 141, 3);
+}
+
+.color3 {
+    color: rgb(168, 36, 36);
+}
+
+.color4 {
+    color: rgb(10, 21, 119);
+}
+
+.color5 {
+    color: rgb(110, 14, 14);
+}
+
+.color6 {
+    color: rgb(8, 96, 107);
+}
+
+.color7 {
+    color: black;
+}
+
+.color8 {
+    color: rgb(50, 57, 58);
+}
+
+.flag {
+    background-color: sandybrown !important;
+}
+
+.explode {
+    background-color: tomato !important;
+}
+
+.checked {
+    background-color: rgb(162, 172, 160) !important;
+}
+
+.checked:hover {
+    cursor: default !important;
+}
+
+.complete {
+    background-color: rgb(44, 168, 44) !important;
+}
+
+.complete:hover {
+    cursor: default !important;
+}
+
+.slider {
+    width: 100%;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .grid {
+        height: 350px;
+        width: 350px;
+    }
+
+    .grid div {
+        font-size: small;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+
+    .grid {
+        height: 300px;
+        width: 300px;
+    }
+
+    .grid div {
+        font-size: x-small;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+
+    .grid {
+        height: 250px;
+        width: 250px;
+    }
+
+    .grid div {
+        font-size: xx-small;
+    }
+
+}

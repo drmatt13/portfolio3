@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #305c50;
+  background-image: linear-gradient(28deg, #305c50 0%, #6ab19e 70%, #82d8a6 100%);
+  height: 100vh;
+  width: 100%;
+}
+
+.sortDisplay {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.btn-container {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 20px;
+}
+
+.btn-container button {
+  padding: 10px;
+}
+
+.sortBar {
+  flex: 1;
+  background-color: #0006;
+  transition: 2s ease-out;
+}
+
+.selected {
+  background-color: #000;
+}

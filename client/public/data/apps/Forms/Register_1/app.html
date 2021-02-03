@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="login-container">
+        <form method="post">
+            <div>
+                <input type="text" id="fname" name="fname" placeholder="First Name" required>
+            </div>
+            <div>
+                <input type="text" id="lname" name="lname" placeholder="Last Name" required>
+            </div>
+            <div>
+                <input type="text" id="username" name="username" placeholder="Username" required>
+            </div>
+            <div>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+            <div>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+            </div>
+            <div>
+                <input type="password" id="password2" name="password2" placeholder="Password">
+            </div>
+            <div>
+                <input type="submit" value="Register">
+            </div>
+        </form>
+        <div class="register-container">
+            <div class="register-container-child">
+                <div>Already a user?</div><div><a href="#">Login now</a></div>
+            </div>
+        </div>
+    </div>
+    <script defer>
+        let style = document.createElement("style");
+        style.innerHTML = 
+        `.login-container div input {
+            transition: 0.3s;
+        }`;
+        document.body.appendChild(style);
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
